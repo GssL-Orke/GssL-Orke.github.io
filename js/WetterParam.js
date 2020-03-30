@@ -4,36 +4,47 @@
     myConnector.getSchema = function (schemaCallback) {
     var cols = [{
         id: "datum_utc",
+        alias:"Datum (UTC-Zeit)",
         dataType: tableau.dataTypeEnum.datetime
     }, {
         id: "datum_local",
+        alias:"Datum (lokale Zeit)",
         dataType: tableau.dataTypeEnum.datetime
     }, {
         id: "temperatur",
+        alias:"Temperatur [°C]",
         dataType: tableau.dataTypeEnum.float
     }, {
         id: "taupunkt",
+        alias:"Taupunkt [°C]",
         dataType: tableau.dataTypeEnum.float
     }, {
         id: "feuchtigkeit",
+        alias:"Feuchtigkeit [%]",
         dataType: tableau.dataTypeEnum.float
     }, {
         id: "schneefall",
+        alias:"Schneefall [mm]",
         dataType: tableau.dataTypeEnum.float
     }, {
         id: "windgeschwindigkeit",
+        alias:"Windgeschwindigkeit [km/h]",
         dataType: tableau.dataTypeEnum.float
     }, {
         id: "spitzenboee",
+        alias:"Spitzenböe [km/h]",
         dataType: tableau.dataTypeEnum.float
     }, {
         id: "windrichtung",
+        alias:"Windrichtung [°]",
         dataType: tableau.dataTypeEnum.float
     }, {
         id: "druck",
+        alias:"Druck [hPa]",
         dataType: tableau.dataTypeEnum.float
     }, {
         id: "niederschlag",
+        alias:"Niederschlag über 1h [mm]",
         dataType: tableau.dataTypeEnum.float
     }];
 
